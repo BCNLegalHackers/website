@@ -62,7 +62,7 @@ module.exports = {
       options: {
         custom: {
           families: ['Gotham Book'],
-          urls: ['/fonts/fonts.css'],
+          urls: ['/fonts/gotham-font.css'],
         },
       },
     },
