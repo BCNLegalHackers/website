@@ -1,0 +1,49 @@
+@import '../styles/_responsive.scss';
+
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  min-height: 100vh;
+
+  @include tablet-and-mobile {
+    flex-direction: column;
+  }
+
+  header {
+    flex: 1;
+    align-self: center;
+
+    @include tablet-and-mobile {
+      flex: none;
+      align-self: stretch;
+    }
+
+    h1 {
+      margin: 0 auto;
+      padding: 2.4rem;
+      max-width: 34rem;
+    }
+  }
+
+  main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    padding: 2.4rem;
+
+    @include tablet-and-mobile {
+      align-items: stretch;
+      padding: 1.2rem;
+    }
+
+    background: var(--lh-red);
+
+    .content {
+      margin: 0 auto;
+      max-width: 34rem;
+    }
+  }
+}

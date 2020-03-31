@@ -1,0 +1,135 @@
+//== Layout Breakpoints
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$layout-breakpoints: (
+  // Small screen / phone
+    sm: 576px,
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 992px,
+  // Extra large screen / wide desktop
+    xl: 1200px,
+  // Extra large screen / wide desktop
+    xxl: 1400px,
+  // Super Extra large screen / wide desktop
+    xxxl: 1600px
+) !default;
+
+//== Media Query - Responsive Below
+@mixin responsive-below($width) {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+//== Media Query - Responsive Above
+@mixin responsive-above($width) {
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}
+
+//== Media Query - Min Desktop Mode
+@mixin minimal-desktop {
+  @media (min-width: #{map-get($layout-breakpoints, lg) + 1px}) and (max-width: #{map-get($layout-breakpoints, xl)}) {
+    @content;
+  }
+}
+
+//== Media Query - Min Desktop And Below Mode
+@mixin minimal-desktop-and-below {
+  @media (max-width: #{map-get($layout-breakpoints, xl)}) {
+    @content;
+  }
+}
+
+//== Media Query - Desktop Mode
+@mixin desktop {
+  @media (min-width: #{map-get($layout-breakpoints, lg)}) {
+    @content;
+  }
+}
+
+//== Media Query - Desktop & Tablet Modes
+@mixin desktop-and-tablet {
+  @media (min-width: #{map-get($layout-breakpoints, md)}) {
+    @content;
+  }
+}
+
+//== Media Query - Tablet Mode
+@mixin tablet {
+  @media (min-width: #{map-get($layout-breakpoints, md)}) and (max-width: #{map-get($layout-breakpoints, lg)}) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (orientation: landscape) and (min-width: 667px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+//== Media Query - Tablet & Mobile Modes
+@mixin tablet-and-mobile {
+  @media (max-width: #{map-get($layout-breakpoints, lg)}) {
+    @content;
+  }
+}
+
+@mixin desktop-hidpi {
+  @media (min-width: #{map-get($layout-breakpoints, xxxl)}) and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin desktop-4k {
+  @media (min-width: #{map-get($layout-breakpoints, 1921px)}) {
+    @content;
+  }
+}
+
+@mixin desktop-4k-portrait {
+  @media (min-height: 1080px) {
+    @content;
+  }
+}
+
+//== Media Query - Mobile Mode
+@mixin mobile {
+  @media (max-width: #{map-get($layout-breakpoints, md) - 1px}) {
+    @content;
+  }
+}
+
+//== Other
+@mixin footer-background {
+  background: $mainGradient;
+  background-size: 200% 200%;
+  animation: footer-anim 40s ease infinite;
+  @keyframes footer-anim {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+
+@mixin container($width: 1440px) {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include responsive-below(1920px) {
+    max-width: $width;
+  }
+
+  @include responsive-above(1921px) {
+    max-width: 1920px;
+  }
+}

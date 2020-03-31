@@ -1,0 +1,18 @@
+.footer {
+  p {
+    text-align: right;
+    font-size: 75%;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Gotham Book';
+  }
+
+  a {
+    border: none;
+  }
+}
+
+.heart-emoji {
+  color: transparent;
+  text-shadow: 0 0 0 var(--lh-white);
+}

@@ -1,0 +1,40 @@
+version: '3.7'
+
+networks:
+
+  net:
+
+volumes:
+
+  db:
+
+services:
+
+  traefik:
+    image: traefik:v2.0
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik/traefik.yml:/etc/traefik/traefik.yml
+    networks:
+      - net
+    ports:
+      - 80:80
+      - 8080:8080
+
+  client:
+    image: node:13
+    working_dir: /usr/src/app
+    user: node
+    command: sh -c "yarn install && yarn develop"
+    restart: unless-stopped
+    volumes:
+      - ./:/usr/src/app
+    networks:
+      - net
+    ports:
+    - '8000:8000'
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.client.rule=Host(`bcnlegalhackers.local`)'
+      - 'traefik.http.services.client.loadbalancer.server.port=8000'

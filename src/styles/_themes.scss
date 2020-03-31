@@ -1,0 +1,29 @@
+.light {
+  background: var(--lh-white);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    color: var(--lh-white);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+  }
+
+  a {
+    color: var(--lh-cream);
+    border-bottom: 1px dotted var(--lh-white);
+  }
+}
