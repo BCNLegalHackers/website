@@ -4,28 +4,24 @@ import React from 'react'
 import { kebabCase } from '../../utils/strings'
 import styles from './nav.module.scss'
 
-const NavEntry = ({ title, entries }) => {
-  return (
-    <div className={styles.entry}>
-      <h5>{title}</h5>
-      <ul className={styles.social}>
-        {entries.map((item) => {
-          return (
-            <li key={kebabCase(item.text)}>
-              <a href={item.href}>
-                {item.icon ? (
-                  <FontAwesomeIcon icon={['fab', item.icon]} />
-                ) : (
-                  `${item.text}`
-                )}
-              </a>
-            </li>
-          )
-        })}
-      </ul>
-    </div>
-  )
-}
+const NavEntry = ({ title, entries }) => (
+  <div className={styles.entry}>
+    <h5>{title}</h5>
+    <ul className={styles.social}>
+      {entries.map((item) => (
+        <li key={kebabCase(item.text)}>
+          <a href={item.href} className={item.icon ? styles.noUnderline : ''}>
+            {item.icon ? (
+              <FontAwesomeIcon icon={['fab', item.icon]} />
+            ) : (
+              `${item.text}`
+            )}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)
 
 const Nav = () => {
   const {

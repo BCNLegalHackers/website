@@ -23,9 +23,9 @@
     li:not(:last-child) {
       padding-right: 0.8rem;
     }
-
-    a {
-      border: none;
-    }
   }
+}
+
+.no-underline {
+  border: none !important;
 }
