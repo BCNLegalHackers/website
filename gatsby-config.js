@@ -69,11 +69,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `lora`,
-        ],
-        display: 'swap'
-      }
+        fonts: [`lora`],
+        display: 'swap',
+      },
     },
     `gatsby-plugin-optimize-svgs`,
     {

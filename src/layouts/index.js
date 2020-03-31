@@ -1,7 +1,12 @@
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  fab,
+  faLinkedin,
+  faMeetup,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
 import DefaultLayout from './default-layout'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faTwitter, faMeetup, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fab, faTwitter, faMeetup, faLinkedin)
 
