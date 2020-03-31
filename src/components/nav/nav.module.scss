@@ -20,8 +20,19 @@
 
     list-style-type: none;
 
+    li:before {
+      display: inline-block;
+      content: '/';
+      padding-right: 0.4rem;
+    }
+
+    li:first-child:before {
+      display: none;
+      padding-left: 0;
+    }
+
     li:not(:last-child) {
-      padding-right: 0.8rem;
+      padding-right: 0.4rem;
     }
   }
 }

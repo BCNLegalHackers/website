@@ -15,17 +15,15 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <h6>
-        {site.siteMetadata.copyright} {new Date().getFullYear()}
-      </h6>
       <p>
-        <small>
-          Made with{' '}
-          <span className={styles.heartEmoji} role="img" aria-label="Heart">
-            ❤️
-          </span>{' '}
-          by <a href="https://41north.dev">°41North</a>
-        </small>
+        {site.siteMetadata.copyright} {new Date().getFullYear()}
+      </p>
+      <p>
+        Made with{' '}
+        <span className={styles.heartEmoji} role="img" aria-label="Heart">
+          ❤️
+        </span>{' '}
+        by <a href="https://41north.dev">°41North</a>
       </p>
     </footer>
   )

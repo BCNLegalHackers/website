@@ -62,7 +62,7 @@ module.exports = {
       options: {
         custom: {
           families: ['Gotham Book'],
-          urls: ['/fonts/gotham-font.css'],
+          urls: ['/fonts/fonts.css'],
         },
       },
     },
@@ -70,7 +70,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`lora`],
-        display: 'swap',
+        display: 'block',
       },
     },
     `gatsby-plugin-optimize-svgs`,
