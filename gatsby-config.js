@@ -67,15 +67,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Lora`,
-            variants: [`300`, `400`, `500`, `700`],
-          },
+          `lora`,
         ],
-      },
+        display: 'swap'
+      }
     },
     `gatsby-plugin-optimize-svgs`,
     {
