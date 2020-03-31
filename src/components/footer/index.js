@@ -20,7 +20,7 @@ const Footer = () => {
       </h6>
       <p>
         <small>
-          Made with <span className={styles.heartEmoji}>❤️</span> by{' '}
+          Made with <span className={styles.heartEmoji} role="img" aria-label="Heart">❤️</span> by{' '}
           <a href="https://41north.dev">°41North</a>
         </small>
       </p>
