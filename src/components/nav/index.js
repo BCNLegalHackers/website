@@ -1,8 +1,3 @@
-import {
-  faLinkedinIn,
-  faMeetup,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
@@ -15,22 +10,11 @@ const NavEntry = ({ title, entries }) => {
       <h5>{title}</h5>
       <ul className={styles.social}>
         {entries.map((item) => {
-          switch (item.icon) {
-            case 'faTwitter':
-              item.icon = faTwitter
-              break
-            case 'faLinkedIn':
-              item.icon = faLinkedinIn
-              break
-            case 'faMeetup':
-              item.icon = faMeetup
-              break
-          }
           return (
             <li key={kebabCase(item.text)}>
               <a href={item.href}>
                 {item.icon ? (
-                  <FontAwesomeIcon icon={item.icon} />
+                  <FontAwesomeIcon icon={['fab', item.icon]} />
                 ) : (
                   `${item.text}`
                 )}

@@ -13,17 +13,17 @@ module.exports = {
       entries: [
         {
           text: 'Meetup',
-          icon: 'faMeetup',
+          icon: 'meetup',
           href: 'https://www.meetup.com/Barcelona-Legal-Hackers',
         },
         {
           text: 'Twitter',
-          icon: 'faTwitter',
+          icon: 'twitter',
           href: 'https://twitter.com/legalhackersbcn',
         },
         {
           text: 'LinkedIn',
-          icon: 'faLinkedIn',
+          icon: 'linkedin',
           href: 'https://www.linkedin.com/company/legalhackers-barcelona/',
         },
       ],
