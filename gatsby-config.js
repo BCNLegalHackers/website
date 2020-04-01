@@ -52,7 +52,7 @@ module.exports = {
         name: siteConfig.title,
         short_name: siteConfig.title,
         start_url: `/`,
-        background_color: `#ff0000`,
+        background_color: `#c10000`,
         theme_color: `#ffff`,
         display: `standalone`,
       },
