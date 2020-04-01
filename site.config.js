@@ -9,7 +9,7 @@ module.exports = {
   image: `https://bcnlegalhackers.org/img/social-card.jpg`,
   menu: [
     {
-      title: 'BCN Legal Hackers',
+      title: 'Social Media',
       entries: [
         {
           text: 'Meetup',
@@ -25,19 +25,6 @@ module.exports = {
           text: 'LinkedIn',
           icon: 'linkedin',
           href: 'https://www.linkedin.com/company/legalhackers-barcelona/',
-        },
-      ],
-    },
-    {
-      title: 'Sobre Legal Hackers',
-      entries: [
-        {
-          text: 'Página oficial',
-          href: 'https://legalhackers.org/',
-        },
-        {
-          text: 'Otros chapters',
-          href: 'https://legalhackers.org/people/',
         },
       ],
     },
