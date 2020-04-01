@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from 'framer-motion'
 import Img from 'gatsby-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
@@ -13,16 +14,22 @@ const Author = ({ author, linkedin, twitter, avatar, body }) => (
       <ul>
         {linkedin && (
           <li>
-            <a href={`https://linkedin.com/in/${linkedin}`}>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href={`https://linkedin.com/in/${linkedin}`}
+            >
               <FontAwesomeIcon icon={['fab', 'linkedin']} />
-            </a>
+            </motion.a>
           </li>
         )}
         {twitter && (
           <li>
-            <a href={`https://twitter.com/${twitter}`}>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href={`https://twitter.com/${twitter}`}
+            >
               <FontAwesomeIcon icon={['fab', 'twitter']} />
-            </a>
+            </motion.a>
           </li>
         )}
       </ul>

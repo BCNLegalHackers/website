@@ -26,6 +26,11 @@
 
     a {
       border: none !important;
+      display: inline-block;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     ul {

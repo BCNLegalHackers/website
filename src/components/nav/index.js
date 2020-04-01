@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from 'framer-motion'
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import { kebabCase } from '../../utils/strings'
@@ -10,13 +11,17 @@ const NavEntry = ({ title, entries }) => (
     <ul className={styles.social}>
       {entries.map((item) => (
         <li key={kebabCase(item.text)}>
-          <a href={item.href} className={item.icon ? styles.noUnderline : ''}>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href={item.href}
+            className={item.icon ? styles.icon : ''}
+          >
             {item.icon ? (
               <FontAwesomeIcon icon={['fab', item.icon]} />
             ) : (
               `${item.text}`
             )}
-          </a>
+          </motion.a>
         </li>
       ))}
     </ul>

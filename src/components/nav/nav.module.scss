@@ -37,6 +37,10 @@
   }
 }
 
-.no-underline {
+.icon {
   border: none !important;
+  display: inline-block;
+  &:hover {
+    opacity: 1;
+  }
 }
