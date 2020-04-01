@@ -1,0 +1,44 @@
+.author {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  img {
+    border-radius: 50%;
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.8em;
+
+    h5 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 80%;
+      margin: 0;
+    }
+
+    a {
+      border: none !important;
+    }
+
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+
+      margin: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+      list-style-type: none;
+
+      li:not(:last-child) {
+        padding-right: 0.4rem;
+      }
+    }
+  }
+}
