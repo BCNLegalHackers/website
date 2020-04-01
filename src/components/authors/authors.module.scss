@@ -1,6 +1,6 @@
 .authors {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 0.8rem;
   grid-row-gap: 1.2rem;
 }
