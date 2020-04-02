@@ -36,6 +36,7 @@ This is the main repository for the web of [BCN Legal Hackers](https://bcnlegalh
 
 We are active on the following channels:
 
+- [MeetUp](https://www.meetup.com/Barcelona-Legal-Hackers)
 - [Twitter](https://twitter.com/LegalhackersBCN)
 - [LinkedIn](https://www.linkedin.com/company/legalhackers-barcelona/)
 
