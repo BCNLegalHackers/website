@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://bcnlegalhackers.org">
-    <img alt="Gatsby" src="https://bcnlegalhackers.org/img/lh-logo.svg" />
+    <img alt="BCN Legal Hackers" src="https://raw.githubusercontent.com/BCNLegalHackers/website/master/src/img/lh-logo.svg" />
   </a>
 </p>
 <h1 align="center">
@@ -32,6 +32,13 @@ This is the main repository for the web of [BCN Legal Hackers](https://bcnlegalh
 
     Your site is now running at `http://localhost:8000` (alternatively you can add to your `/etc/hosts` the entry `bcnlegalhackers.local` to resolve the domain)!
 
+## Follow us
+
+We are active on the following channels:
+
+- [Twitter](https://twitter.com/LegalhackersBCN)
+- [LinkedIn](https://www.linkedin.com/company/legalhackers-barcelona/)
+
 ## ❤️ Acknowledgements
 
-Made by love by [41North](https://41north.dev).
+Made with love by [41North](https://41north.dev).
