@@ -4,6 +4,7 @@ import Footer from '../components/footer'
 import Nav from '../components/nav'
 import logo from '../img/lh-logo.svg'
 import styles from './default-layout.module.scss'
+import { Link } from 'gatsby'
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -14,7 +15,9 @@ const DefaultLayout = ({ children }) => {
           animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 1, delay: 0.5 }}
         >
-          <img src={logo} alt="BCN Legal Hackers logo" />
+          <Link to="/">
+            <img src={logo} alt="BCN Legal Hackers logo" />
+          </Link>
         </motion.h1>
       </header>
       <main>
