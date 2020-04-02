@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://bcnlegalhackers.org">
-    <img alt="BCN Legal Hackers" src="https://raw.githubusercontent.com/BCNLegalHackers/website/master/src/img/lh-logo.svg" />
+    <img alt="BCN Legal Hackers" src="https://raw.githubusercontent.com/BCNLegalHackers/website/master/static/img/social-card.jpg" />
   </a>
 </p>
 <h1 align="center">
