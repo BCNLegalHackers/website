@@ -19,7 +19,7 @@ module.exports = {
         {
           text: 'Twitter',
           icon: 'twitter',
-          href: 'https://twitter.com/legalhackersbcn',
+          href: 'https://twitter.com/bcnlegalhackers',
         },
         {
           text: 'LinkedIn',
