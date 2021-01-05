@@ -21,7 +21,7 @@
     "@storybook/addon-viewport": "^5.3.17",
     "@storybook/addons": "^5.3.17",
     "@storybook/react": "^5.3.17",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-remove-graphql-queries": "^2.8.1",
     "babel-preset-gatsby": "^0.3.1",
